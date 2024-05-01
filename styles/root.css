@@ -1,0 +1,206 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css");
+
+@font-face {
+    font-family: 'Freesentation-9Black';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/2404@1.0/Freesentation-9Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background: #141517;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Freesentation-9Black';
+}
+
+nav {
+    width: 100%;
+    height: 4rem;
+    background: #141517;
+}
+
+content-area {
+    width: 100%;
+    height: calc(100% - 4rem);
+    display: flex;
+    flex-direction: row;
+}
+
+left-box {
+    width: 15rem;
+    height: 100%;
+}
+
+video-box {
+    width: calc(100% - 24rem - 15rem);
+    height: 100%;
+    background: #141517;
+    display: flex;
+    flex-direction: column;
+}
+
+video-box video {
+    width: 100%;
+    background: #000000;
+}
+
+chat-box {
+    width: 24rem;
+    height: 100%;
+    background: #141517;
+    border-left: 1px solid #222325;
+    display: flex;
+    flex-direction: column;
+}
+
+chat-title {
+    width: 100%;
+    height: 3.3rem;
+    background: #141517;
+    border-top: 1px solid #222325;
+    border-bottom: 1px solid #222325;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+chat-icon-left, chat-icon-right {
+    padding: 4px;
+    color: #dfe2ea;
+    border-radius: 6px;
+    margin: 0 8px 0 8px;
+}
+
+svg {
+    vertical-align: top;
+}
+
+chat-icon-left:hover, chat-icon-right:hover {
+    background: #2c2d2f;
+}
+
+chat-title-text {
+    color: #dfe2ea;
+    font-size: 1.2rem;
+}
+
+chat-list {
+    width: calc(100% - 2rem);
+    height: calc(100% - 7rem - 3.3rem - 1rem);
+    background: #141517;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin: 0 1rem 1rem 1rem;
+    overflow-y: scroll;
+}
+
+chat-input {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+input-area {
+    position: relative;
+    width: calc(100% - 2rem);
+    height: 3rem;
+    margin: 0 1rem;
+}
+
+input-area input {
+    width: 86%;
+    height: 95%;
+    border: none;
+    background: #373a3f;
+    padding: 0 0 0 14%;
+    border-radius: 10px;
+    color: #dfe2ea;
+    font-size: 0.9rem;
+    outline: none;
+}
+
+input-area button {
+    position: absolute;
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    color: #dfe2ea;
+    border-radius: 8px;
+    background: #5f6165;
+    top: 47.5%;
+    transform: translateY(-50%);
+    left: 0.65rem;
+}
+
+submit-area {
+    width: calc(100% - 2rem);
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 0 1rem;
+}
+
+submit-button {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.3rem 0.6rem;
+    background: #2d2f31;
+    font-size: 1.05rem;
+    border-radius: 8px;
+    margin-top: 0.3rem;
+    color: #7d7e80;
+}
+
+chat-name {
+    margin-left: 0.25rem;
+}
+
+chat-item {
+    width: 100%;
+    height: 1.2rem;
+    margin-top: 0.7rem;
+    font-family: "Pretendard Variable" !important;
+    font-size: 0.9rem !important;
+}
+
+chat-text {
+    margin-left: 1rem;
+    color: #dfe2ea;
+}
+
+.color1 {
+    color: #b05b95;
+}
+
+.color2 {
+    color: #87c2c5;
+}
+
+.color3 {
+    color: #e6a441;
+}
+
+.color4 {
+    color: #687fb2;
+}
+
+video-text {
+    margin-left: 1.5rem;
+}
+
+video-text h1 {
+    color: #dfe2ea;
+    font-family: "Pretendard Variable" !important;
+    font-weight: 600;
+    font-size: 1.75rem;
+}
