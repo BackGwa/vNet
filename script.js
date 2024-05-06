@@ -31,17 +31,18 @@ const names = ["물고기", "달걀후라이", "계란후라이",
     "부활한 군주", "도도한 탐험가", "대충하자",
     "대충안하자", "맛있는 포테이토", "부활한 탐험가",
     "버스타는 만렙", "스타메가", "싸구려커피", "미스터",
-    "미스트 비스트", "모탈", "준표형", "침대"];
+    "미스트 비스트", "모탈", "준표형", "침대", "개발자", "아스마",
+    "코딩마스터", "지피티", "우왕", "삼겹살"];
 const colors = ["color1", "color2", "color3", "color4"];
-const chats1 = ["아니 ", "근데 ", "진짜로 ", "버튜버 ", "버튜바 ", "오 ", "?", "!", "하 "];
-const chats2 = ["레전드다", "신기하네", "AI인가??", "히히", "왜?", "ㅋㅋㅋ", "!", "대박"];
+const chats1 = ["아니 ", "근데 ", "진짜로 ", "버튜버 ", "버튜바 ", "오 ", "?", "!", "하 ", "어렛 "];
+const chats2 = ["레전드다", "신기하네", "AI인가??", "히히", "왜?", "ㅋㅋㅋ", "!", "대박", "분탕 ㄴㄴ", "도배 ㄴㄴ"];
 
 window.onload = () => {
     setInterval(() => {
         if (rand(0, 1) == 0) {
-            randname = rand(0, 19);
+            randname = rand(0, 25);
             randcolor = rand(0, 3);
-            addchat(names[randname], colors[randcolor], `${chats1[rand(0, 8)]}${chats2[rand(0, 7)]}`);
+            addchat(names[randname], colors[randcolor], `${chats1[rand(0, 9)]}${chats2[rand(0, 9)]}`);
         }
     }, 100);
     open();
