@@ -185,10 +185,10 @@ chat-item {
 
 video-chat {
     position: absolute;
-    width: 17rem;
-    height: 15rem;
+    width: 22rem;
+    height: 45rem;
     top: 50%;
-    right: 0.3rem;
+    left: 1rem;
     transform: translateY(-50%) scale(90%);
     overflow-x: hidden;
     overflow-y: scroll;
@@ -204,11 +204,12 @@ video-chat::-webkit-scrollbar {
 
 video-chat chat-item {
     width: calc(100% - 1.6rem);
-    height: 1rem;
+    height: 3rem;
     margin-top: 0.6rem;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
     background: #ffffff;
     border-radius: 0.3rem;
+    font-size: 1.2rem !important;
 }
 
 chat-text {
