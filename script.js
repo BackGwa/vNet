@@ -15,6 +15,36 @@ function getDeviceStream(option) {
 function addchat(name, color, chat) {
     document.querySelector("chat-list").innerHTML += `<chat-item><chat-name class="${color}">${name}</char-name><chat-text>${chat}</chat-text></chat-item>`;
     document.querySelector("chat-list").scrollTop = document.querySelector("chat-list").scrollHeight;
+
+    document.querySelector("video-chat").innerHTML += `<chat-item class="${color}"><chat-name>${name}</char-name><chat-text>${chat}</chat-text></chat-item>`;
+    document.querySelector("video-chat").scrollTop = document.querySelector("chat-list").scrollHeight;
+
+    item1 = document.querySelectorAll("chat-item");
+
+    if (item1.length > 250) {
+        idx = 0;
+        document.querySelector("chat-list").innerHTML = "";
+        document.querySelector("video-chat").innerHTML = "";
+
+        pack = setInterval(() => {
+            name = names[rand(0, 25)];
+            color = colors[rand(0, 3)];
+            chat = chats1[rand(0, 9)] + chats2[rand(0, 9)];
+            document.querySelector("chat-list").innerHTML += `<chat-item><chat-name class="${color}">${name}</char-name><chat-text>${chat}</chat-text></chat-item>`;
+            document.querySelector("chat-list").scrollTop = document.querySelector("chat-list").scrollHeight;
+
+            document.querySelector("video-chat").innerHTML += `<chat-item class="${color}"><chat-name>${name}</char-name><chat-text>${chat}</chat-text></chat-item>`;
+            document.querySelector("video-chat").scrollTop = document.querySelector("chat-list").scrollHeight;
+
+            idx++;
+
+            if (idx > 50) {
+                idx = 0;
+                clearInterval(pack);
+            }
+        }, 50);
+    }
+
 }
 
 function open() {
