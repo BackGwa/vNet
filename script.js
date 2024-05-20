@@ -38,11 +38,11 @@ function addchat(name, color, chat) {
 
             idx++;
 
-            if (idx > 50) {
+            if (idx > 30) {
                 idx = 0;
                 clearInterval(pack);
             }
-        }, 50);
+        }, 5);
     }
 
 }
@@ -69,7 +69,7 @@ const chats2 = ["레전드다", "신기하네", "AI인가??", "히히", "왜?", 
 
 window.onload = () => {
     setInterval(() => {
-        if (rand(0, 1) == 0) {
+        if (rand(1, 5) == 1) {
             randname = rand(0, 25);
             randcolor = rand(0, 3);
             addchat(names[randname], colors[randcolor], `${chats1[rand(0, 9)]}${chats2[rand(0, 9)]}`);

@@ -185,7 +185,7 @@ chat-item {
 
 video-chat {
     position: absolute;
-    width: 22rem;
+    width: 18rem;
     height: 45rem;
     top: 50%;
     left: 1rem;
@@ -196,6 +196,7 @@ video-chat {
     flex-direction: column;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    filter: drop-shadow(0 0 12px #00000030);
 }
 
 video-chat::-webkit-scrollbar {
@@ -204,12 +205,12 @@ video-chat::-webkit-scrollbar {
 
 video-chat chat-item {
     width: calc(100% - 1.6rem);
-    height: 3rem;
+    height: 1.2rem;
     margin-top: 0.6rem;
     padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-    background: #ffffff;
+    background: #2e2e2e;
     border-radius: 0.3rem;
-    font-size: 1.2rem !important;
+    font-size: 1rem !important;
 }
 
 chat-text {
@@ -219,7 +220,7 @@ chat-text {
 
 video-chat chat-text {
     margin-left: 0.1rem;
-    color: #000000;
+    color: #ffffff;
 }
 
 video-chat chat-text::before {
@@ -231,32 +232,17 @@ video-chat chat-text::before {
     color: #b05b95;
 }
 
-video-chat .color1 {
-    filter: drop-shadow(0 4px 6px #b05b95CF);
-}
 
 .color2 {
     color: #87c2c5;
-}
-
-video-chat .color2 {
-    filter: drop-shadow(0 4px 6px #87c2c5CF);
 }
 
 .color3 {
     color: #e6a441;
 }
 
-video-chat .color3 {
-    filter: drop-shadow(0 4px 6px #e6a441CF);
-}
-
 .color4 {
     color: #687fb2;
-}
-
-video-chat .color4 {
-    filter: drop-shadow(0 4px 6px #687fb2CF);
 }
 
 video-area {
@@ -322,6 +308,12 @@ nav left-area content-box {
     left: 1rem;
     color: #dfe2ea;
 } 
+
+nav left-area content-box img {
+    height: 32px;
+    margin-top: 5px;
+    margin-left: -12px;
+}
 
 .logo {
     margin-top: 0.5rem;
